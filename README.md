@@ -3,7 +3,10 @@ A tiny wrapper for default Notifications on Builds
 
 
 ## Documentation
-Learning by examples:
+
+
+### Obvious: Require it!
+    var notifyWrapper = require('gulp-notify-wrapper');
 
 
 ### Success Notifications
