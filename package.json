@@ -1,0 +1,28 @@
+{
+  "name": "gulp-notify-wrapper",
+  "version": "0.0.1",
+  "description": "A simple wrapper for the gulp-notify plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/activenode/gulp-notify-wrapper.git"
+  },
+  "keywords": [
+    "wrapper",
+    "gulp",
+    "notify",
+    "sound"
+  ],
+  "author": "David Lorenz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/activenode/gulp-notify-wrapper/issues"
+  },
+  "homepage": "https://github.com/activenode/gulp-notify-wrapper",
+  "dependencies": {
+    "gulp-notify": "^2.2.0"
+  }
+}
