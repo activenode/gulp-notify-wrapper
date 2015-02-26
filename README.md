@@ -13,7 +13,7 @@ A tiny wrapper for default Notifications on Builds
     gulp.task('default', function(){
         return gulp.src('./js/*.js')
             .pipe(concat('concat.js'))
-            .pipe(notifyWrapper.compileSuccess)
+            .pipe(notifyWrapper.compile.success())
             .pipe(gulp.dest('./compiled-js))
     });
     
@@ -24,7 +24,7 @@ A tiny wrapper for default Notifications on Builds
 #### With plumber errorHandling (simple!)
     gulp.task('default', function(){
         return gulp.src('./js/*.js')
-            .pipe(plumber(notifyWrapper.fileCompileError))
+            .pipe(plumber(notifyWrapper.compile.error()))
             .pipe(concat('concat.js'))
             .pipe(gulp.dest('./compiled-js));
     });
@@ -32,7 +32,7 @@ A tiny wrapper for default Notifications on Builds
 #### Without plumber error handling
     gulp.task('default', function(){
         return gulp.src('./js/*.js')
-            .pipe(notifyWrapper.fileCompileError.errorHandler)
+            .pipe(notifyWrapper.compile.error().errorHandler)
             .pipe(concat('concat.js'))
             .pipe(gulp.dest('./compiled-js));
     });
