@@ -3,7 +3,7 @@ var notify = require('gulp-notify');
 function genFileLineBasedCompileError()  {
     return notify.onError({
         title:    'Error @Line <%= error.lineNumber %>',
-        subtitle: '<%= error.fileName %> could not be processed!',
+        subtitle: "<%= error.fileName.replace(/^.*[\\\/]/, '') %> could not be processed!",
         message:  '<%= error.message %>',
         sound: 'Glass'
     });
